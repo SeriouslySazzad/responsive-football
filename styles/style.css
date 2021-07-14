@@ -286,6 +286,12 @@ footer h2 {
     grid-template-columns: repeat(1, 1fr);
    }
 
+   header {
+    width: 700px;
+    height: 800px;
+
+   }
+
    .players {
        margin-top: 400px;
    }
