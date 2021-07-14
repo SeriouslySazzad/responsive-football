@@ -14,7 +14,8 @@ header {
     background-color: #2D25A0;
 }
  .header-section {
-     display: flex;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
  }
 
  .conmebol {
@@ -74,7 +75,6 @@ header {
     align-items: center;
     
 }
-
 
 .players {
     display: grid;
@@ -250,7 +250,7 @@ header {
     height: 213px;
     text-align: center;
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
     
 }
 
@@ -277,3 +277,30 @@ footer h2 {
 }
 
 /* End Footer Section  */
+
+/* Start Media Queries  */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+   .header-section, .players, .highlights-item, .groups, .hosts {
+    grid-template-columns: repeat(1, 1fr);
+   }
+
+   .players {
+       margin-top: 400px;
+   }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+     .header-section, .players, .highlights-item {
+        grid-template-columns: repeat(2, 1fr);
+       }
+       .header-item {
+        width: 100%;
+       }
+
+     .hosts, .groups {
+        grid-template-columns: repeat(1, 1fr);       }
+}
+/* End Media Queries  */
